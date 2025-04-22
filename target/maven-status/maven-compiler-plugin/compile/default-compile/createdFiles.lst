@@ -1,0 +1,14 @@
+com\nathan\springboot_foros\controllers\UsuarioController.class
+com\nathan\springboot_foros\controllers\UsuarioNotFoundExcepcion.class
+com\nathan\springboot_foros\service\ForoServicelmpl.class
+com\nathan\springboot_foros\controllers\ForoNotFoundExcepcion.class
+com\nathan\springboot_foros\service\ForoService.class
+com\nathan\springboot_foros\dto\ForoDto.class
+com\nathan\springboot_foros\dto\LoginDto.class
+com\nathan\springboot_foros\repository\ForoRepository.class
+com\nathan\springboot_foros\service\UsuarioService.class
+com\nathan\springboot_foros\controllers\ForoController.class
+com\nathan\springboot_foros\service\UsuarioServicelmpl.class
+com\nathan\springboot_foros\repository\UsuarioRepository.class
+com\nathan\springboot_foros\dto\UsuarioDto.class
+com\nathan\springboot_foros\SpringbootForosApplication.class
