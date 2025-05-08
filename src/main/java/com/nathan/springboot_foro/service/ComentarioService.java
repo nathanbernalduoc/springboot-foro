@@ -13,6 +13,6 @@ public interface ComentarioService {
     ComentarioDto createComentario(ComentarioDto usuario);
     ComentarioDto updateComentario(Long id, ComentarioDto usuario);
     void deleteComentario(Long id);
-
+    public List<ComentarioDto> getComentarioByForoId(Long foroId);
 
 }

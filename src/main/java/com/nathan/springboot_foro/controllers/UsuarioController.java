@@ -69,6 +69,7 @@ public class UsuarioController {
 
     @PostMapping
     public EntityModel<UsuarioDto> createUsuario(@RequestBody UsuarioDto usuario) {
+        System.out.println(usuario);
         UsuarioDto createdUsuario = usuarioService.createUsuario(usuario);
 
         return EntityModel.of(createdUsuario,

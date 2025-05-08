@@ -21,6 +21,11 @@ public class ComentarioServicelmpl implements ComentarioService {
     }
 
     @Override
+    public List<ComentarioDto> getComentarioByForoId(Long id) {
+        return comentarioRepository.findByForoId(id);
+    }
+
+    @Override
     public Optional<ComentarioDto> getComentarioById(Long id) {
         return comentarioRepository.findById(id);
     }

@@ -1,7 +1,6 @@
 package com.nathan.springboot_foro.controllers;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,16 +50,26 @@ public class ComentarioController {
     }
 
     @GetMapping("/{id}")
-    public EntityModel<ComentarioDto> getComentarioById(@PathVariable Long id) {
-        Optional<ComentarioDto> comentario = comentarioService.getComentarioById(id);
+    public CollectionModel<EntityModel<ComentarioDto>> getComentarioById(@PathVariable Long id) {
 
-        if (comentario.isPresent()) {
-            return EntityModel.of(comentario.get(),
-                WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).getComentarioById(id)).withSelfRel(),
-                WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).getAllComentarios()).withRel("all-comentarios"));
-        } else {
-            throw new ComentarioNotFoundExcepcion("El comentario no ha sido encontrado");
-        }
+        List<ComentarioDto> comentarios = comentarioService.getComentarioByForoId(id);
+        List<EntityModel<ComentarioDto>> comentarioResource = 
+            comentarios.stream().map(
+                comentario -> EntityModel.of(
+                    comentario,
+                    WebMvcLinkBuilder.linkTo(
+                        WebMvcLinkBuilder.methodOn(
+                            this.getClass()
+                        ).getComentarioById(comentario.getComentarioId())
+                    ).withSelfRel()
+                )
+            )
+            .collect(Collectors.toList());
+
+        WebMvcLinkBuilder linkTo = WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).getAllComentarios());
+        CollectionModel<EntityModel<ComentarioDto>> resources = CollectionModel.of(comentarioResource, linkTo.withRel("comentarios"));
+
+        return resources;
 
     }
 

@@ -22,15 +22,34 @@ public class ComentarioDto {
     private String comentario;
     @Column(name = "USUARIO")
     private String usuario;
+    @Column(name = "FORO_ID")
+    private Long foroId;
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public Long getForoId() {
+        return foroId;
+    }
+
+    public void setForoId(Long foroId) {
+        this.foroId = foroId;
+    }
 
     ComentarioDto() {
 
     }
 
-    ComentarioDto(Long comentarioId, String comentario, String usuario) {
+    ComentarioDto(Long comentarioId, String comentario, String usuario, Long foroId) {
         this.comentarioId = comentarioId;
         this.comentario = comentario;
         this.usuario = usuario;
+        this.foroId = foroId;
     }
 
     public Long getComentarioId() {
