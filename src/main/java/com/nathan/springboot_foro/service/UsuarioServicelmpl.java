@@ -26,15 +26,14 @@ public class UsuarioServicelmpl implements UsuarioService {
     }
 
     @Override
+    public Boolean login(String alias, String pass) {
+        UsuarioDto usuario = usuarioRepository.findByAlias(alias);
+        return (usuario != null && usuario.getPassword().equals(pass));
+    }
+
+    @Override
     public Optional<UsuarioDto> getUsuarioByAlias(String alias) {
-        List<UsuarioDto> usuarios = usuarioRepository.findAll();
-        Optional<UsuarioDto> usuarioSel = null;
-        for(UsuarioDto usuario: usuarios) {
-            if (usuario.getAlias().equals(alias)) {
-                usuarioSel = Optional.of(usuario);
-            }
-        }
-        return usuarioSel;
+        return Optional.of(usuarioRepository.findByAlias(alias));
     }
 
     @Override

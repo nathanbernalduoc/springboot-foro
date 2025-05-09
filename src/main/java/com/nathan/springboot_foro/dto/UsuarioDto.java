@@ -21,6 +21,15 @@ public class UsuarioDto extends RepresentationModel<UsuarioDto> {
     private Long usuarioId;
     @Column(name = "rol_id")
     private int rol;
+
+    public Long getUsuarioId() {
+        return usuarioId;
+    }
+
+    public void setUsuarioId(Long usuarioId) {
+        this.usuarioId = usuarioId;
+    }
+
     @Column(name = "alias")
     private String alias;
     @Column(name = "password")

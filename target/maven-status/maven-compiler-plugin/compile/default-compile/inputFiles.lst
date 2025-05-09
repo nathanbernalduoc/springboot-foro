@@ -1,14 +1,21 @@
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\controllers\ForoController.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\controllers\ForoNotFoundExcepcion.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\controllers\UsuarioController.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\controllers\UsuarioNotFoundExcepcion.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\dto\ForoDto.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\dto\LoginDto.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\dto\UsuarioDto.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\repository\ForoRepository.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\repository\UsuarioRepository.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\service\ForoService.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\service\ForoServicelmpl.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\service\UsuarioService.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\service\UsuarioServicelmpl.java
-C:\Dev\projects\fullstack3\Semana 6\spingboot-foros\src\main\java\com\nathan\springboot_foros\SpringbootForosApplication.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/CORSConfig.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/SpringbootForosApplication.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/controllers/ComentarioController.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/controllers/ComentarioNotFoundExcepcion.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/controllers/ForoController.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/controllers/ForoNotFoundExcepcion.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/controllers/UsuarioController.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/controllers/UsuarioNotFoundExcepcion.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/dto/ComentarioDto.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/dto/ForoDto.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/dto/LoginDto.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/dto/UsuarioDto.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/repository/ComentarioRepository.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/repository/ForoRepository.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/repository/UsuarioRepository.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/service/ComentarioService.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/service/ComentarioServicelmpl.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/service/ForoService.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/service/ForoServicelmpl.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/service/UsuarioService.java
+/Users/nathan/Projects/duoc/fullstack/week8/springboot-foro/src/main/java/com/nathan/springboot_foro/service/UsuarioServicelmpl.java

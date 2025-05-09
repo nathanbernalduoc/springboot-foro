@@ -3,6 +3,8 @@ package com.nathan.springboot_foro.dto;
 public class LoginDto {
     private String alias;
     private String password;
+    private Boolean status;
+
     public String getAlias() {
         return alias;
     }
@@ -14,6 +16,12 @@ public class LoginDto {
     }
     public void setPassword(String password) {
         this.password = password;
+    }
+    public Boolean getStatus() {
+        return status;
+    }
+    public void setStatus(Boolean status) {
+        this.status = status;
     }
     
 }

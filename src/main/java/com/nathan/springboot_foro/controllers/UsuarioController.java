@@ -41,7 +41,7 @@ public class UsuarioController {
                     WebMvcLinkBuilder.linkTo(
                         WebMvcLinkBuilder.methodOn(
                             this.getClass()
-                        ).getUsuarioById(usuario.getId())
+                        ).getUsuarioById(usuario.getUsuarioId())
                     ).withSelfRel()
                 )
             )
@@ -94,25 +94,13 @@ public class UsuarioController {
     }
 
     @PostMapping("/login")
-    public EntityModel<UsuarioDto> login(@RequestBody LoginDto login) {
+    public LoginDto login(@RequestBody LoginDto login) {
         System.out.println("Alias "+login.getAlias());
         System.out.println("Passw "+login.getPassword());
-        Optional<UsuarioDto> usuario = usuarioService.getUsuarioByAlias(login.getAlias());
-        if (usuario.isPresent()) {
-            UsuarioDto usuarioItem = usuario.get();
-            if (login.getPassword().equals(usuarioItem.getPassword())) {
-                return EntityModel.of(usuario.get(),
-                    WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).getUsuarioById(usuario.get().getId())).withSelfRel(),
-                    WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).getAllUsuarios()).withRel("all-usuarios")
-                );
-            } else {
-                throw new UsuarioNotFoundExcepcion("Credenciales incorrectas");
-            }
-            
-        } else {
-                throw new UsuarioNotFoundExcepcion("El alias indicado no ha sido encontrado");
-        }
-
+        LoginDto loginOut = new LoginDto();
+        loginOut.setAlias(login.getAlias());
+        loginOut.setStatus(usuarioService.login(login.getAlias(), login.getPassword()));
+        return loginOut;
     }
     
 
